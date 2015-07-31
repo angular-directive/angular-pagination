@@ -7,6 +7,8 @@
 
 
 ### 安装
+
+- 项目使用可以直接 `bower install angular-paginationjs` 下载 ，学习的同学可参照下面步骤
 ```
 克隆项目到本地
 git clone https://github.com/febobo/angular-pagination.git
@@ -41,20 +43,10 @@ var app = angular.module('demo' , ['pagination']);
       $scope.title = 'pagination-directive';
 
       $scope.conf = {
-
-        // 总条数
         total : 1190,
-
-        // 当前页
         currentPage : 1,
-
-        // 一页展示多少条
         itemPageLimit : 1,
-
-        // 是否显示一页选择多少条
         isSelectPage : false,
-
-        // 是否显示快速跳转
         isLinkPage : false
       }
 
@@ -66,6 +58,13 @@ var app = angular.module('demo' , ['pagination']);
   })
 
 ```
+### 参数说明
+`total` : Number list总条数 必填 <br />
+`currentPage` : Number 当前页 必填 <br />
+`itemPageLimit` : Number 一页展示多少条 选填 默认为10<br />
+`itemSelectPage` : 是否显示一页选择多少条下拉框  选填 默认为false展示 <br />
+`isLinkPage` : 是否显示快速跳转框  选填 默认为false展示 <br />
+
 #### Q&A
 @febobo
 
